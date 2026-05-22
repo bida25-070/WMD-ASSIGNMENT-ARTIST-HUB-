@@ -66,16 +66,16 @@
     const message = document.getElementById('message');
 
     form.addEventListener('submit', function(e) {
-        e.preventDefault(); // stop page refresh
+        e.preventDefault(); 
         message.style.display = 'block';
 
-        // optional: clear form
+        
         form.reset();
 
-        // remove star selection
+        
         document.querySelectorAll('.star').forEach(s => s.classList.remove('selected'));
 
-        // hide message after 3 seconds
+        
         setTimeout(() => {
             message.style.display = 'none';
         }, 3000);
