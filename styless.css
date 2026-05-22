@@ -349,15 +349,13 @@ body{
     overflow-x: hidden;
 }
 
-/* Make images responsive */
+
 img{
     max-width: 100%;
     height: auto;
 }
 
-/* =========================
-   TABLETS
-========================= */
+
 
 @media(max-width:992px){
 
@@ -422,9 +420,7 @@ img{
     }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
+
 
 @media(max-width:768px){
 
@@ -501,9 +497,7 @@ img{
     }
 }
 
-/* =========================
-   SMALL PHONES
-========================= */
+
 
 @media(max-width:480px){
 

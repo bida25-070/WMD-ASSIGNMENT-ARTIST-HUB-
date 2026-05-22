@@ -1114,15 +1114,13 @@ body{
     overflow-x: hidden;
 }
 
-/* Responsive images */
+
 img{
     max-width: 100%;
     height: auto;
 }
 
-/* ===================================
-   LARGE TABLETS
-=================================== */
+
 
 @media screen and (max-width:1200px){
 
@@ -1137,9 +1135,6 @@ img{
     }
 }
 
-/* ===================================
-   TABLETS
-=================================== */
 
 @media screen and (max-width:992px){
 
@@ -1214,9 +1209,7 @@ img{
     }
 }
 
-/* ===================================
-   MOBILE DEVICES
-=================================== */
+
 
 @media screen and (max-width:768px){
 
@@ -1293,9 +1286,7 @@ img{
     }
 }
 
-/* ===================================
-   SMALL PHONES
-=================================== */
+
 
 @media screen and (max-width:480px){
 
