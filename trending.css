@@ -1,0 +1,599 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo p {
+    display: none;
+}
+
+header .logo link {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    align-content: center;
+    gap: 50px;
+    margin-top: 70px;
+    margin-right: 500px;
+    margin-left: -400px;
+}
+
+nav li {
+    display: flex;
+    text-decoration: none;
+    align-content: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-style: bold;
+    font-family: sans-serif;
+}
+nav li a.active{
+    color: red;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+nav li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+main{
+    width: 90%;
+    margin: 30px auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+h1{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+
+    color: white;
+    font-size: 33px;
+    font-weight: normal;
+
+    border: 1px solid rgba(231, 2, 2, 0.8);
+    border-radius: 40px;
+
+    padding: 12px 0px;
+
+    background: rgba(70,70,70,0.3);
+}
+
+/* ARTIST BOXES */
+
+.top1,
+.top2,
+.top3,
+.top4,
+.top5,
+.top6{
+    width: 30%;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 28px;
+    position: relative;
+    vertical-align: top;
+}
+
+.top1 img{
+
+    height: 430px;
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.top1 img,
+.top2 img,
+.top3 img,
+.top4 img,
+.top5 img,
+.top6 img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+.top1 p,
+.top2 p,
+.top3 p,
+.top4 p,
+.top5 p,
+.top6 p{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.top1::before{
+    content: "1";
+}
+
+.top2::before{
+    content: "2";
+}
+
+.top3::before{
+    content: "3";
+}
+
+.top4::before{
+    content: "4";
+}
+
+.top5::before{
+    content: "5";
+}
+
+.top6::before{
+    content: "6";
+}
+
+.top1::before,
+.top2::before,
+.top3::before,
+.top4::before,
+.top5::before,
+.top6::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background: #9b0000;
+    color: white;
+
+    text-align: center;
+    line-height: 35px;
+
+    font-size: 28px;
+
+    border-radius: 0px 0px 8px 0px;
+}
+
+
+
+.top1 img:hover,
+.top2 img:hover,
+.top3 img:hover,
+.top4 img:hover,
+.top5 img:hover,
+.top6 img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+footer{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    background-image: url(Images/BACKGROUND\ TMZ.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 250px;
+    
+
+}
+
+
+
+footer p:nth-child(1){
+    width: 240px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #e5e5e5;
+    margin-top: -35px;
+}
+
+
+
+footer p:nth-child(1) a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+footer p:nth-child(2){
+    position: absolute;
+    left: 25px;
+    bottom: -5px;
+    color: #d0d0d0;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+
+
+footer p:nth-child(3){
+    position: absolute;
+    left: 48%;
+   
+    top: 40px;
+    font-size: 1rem;
+    color: white;
+    margin-top: -40px;
+    margin-left: -110px;
+}
+
+
+
+.icon1{
+    position: absolute;
+    left: 47%;
+    top: 85px;
+    display: flex;
+    align-items: center;
+    margin-top: -59px;
+    margin-left: -160px;
+}
+
+.icon1 img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    
+}
+.icon1 p{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 50px;
+    margin-top: -150px;
+    
+}
+
+
+
+.icon2{
+    position: absolute;
+    left: 47%;
+    top: 130px;
+      margin-top: -50px;
+    margin-left: -160px;
+}
+
+.icon2 img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+
+
+.icon3{
+    position: absolute;
+    left: 47%;
+    top: 175px;
+    margin-left: -160px;
+    margin-top: -45px;
+}
+
+.icon3 img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+
+
+footer p:last-child{
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    width: 350px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: 500px;
+    margin-right: 90px;
+    margin-top: -50px;
+}
+
+
+
+footer::before{
+    content: "";
+    position: absolute;
+    left: 33%;
+    top: 30px;
+    width: 1px;
+    height: 140px;
+    background: rgba(255,255,255,0.4);
+}
+
+footer::after{
+    content: "";
+    position: absolute;
+    right: 38%;
+    top: 30px;
+    width: 1px;
+    height: 140px;
+    background: rgba(255,255,255,0.4);
+}
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+/* Responsive images */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media(max-width:1200px){
+
+    nav ul{
+        margin-right: 120px;
+        margin-left: -120px;
+        gap: 25px;
+    }
+
+    h1{
+        width: 80%;
+        font-size: 28px;
+    }
+
+    .top1,
+    .top2,
+    .top3,
+    .top4,
+    .top5,
+    .top6{
+        width: 45%;
+        margin-left: 20px;
+    }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media(max-width:992px){
+
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    header .logo{
+        margin: 0;
+    }
+
+    nav ul{
+        margin: 20px 0;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    h1{
+        width: 90%;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .top1,
+    .top2,
+    .top3,
+    .top4,
+    .top5,
+    .top6{
+        width: 46%;
+        margin: 20px 1.5%;
+    }
+
+    .top1 p,
+    .top2 p,
+    .top3 p,
+    .top4 p,
+    .top5 p,
+    .top6 p{
+        font-size: 18px;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    footer::before,
+    footer::after{
+        display: none;
+    }
+
+    footer p,
+    footer p:last-child,
+    .icon1,
+    .icon2,
+    .icon3{
+        position: static;
+        margin: 5px 0;
+        text-align: center;
+        width: auto;
+    }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+        gap: 15px;
+    }
+
+    nav li a{
+        font-size: 14px;
+    }
+
+    header .logo img{
+        height: 40px;
+    }
+
+    main{
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    .top1,
+    .top2,
+    .top3,
+    .top4,
+    .top5,
+    .top6{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .top1 img,
+    .top2 img,
+    .top3 img,
+    .top4 img,
+    .top5 img,
+    .top6 img{
+        height: auto;
+    }
+
+    .top1 p,
+    .top2 p,
+    .top3 p,
+    .top4 p,
+    .top5 p,
+    .top6 p{
+        font-size: 16px;
+    }
+
+    .top1::before,
+    .top2::before,
+    .top3::before,
+    .top4::before,
+    .top5::before,
+    .top6::before{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .icon1 img,
+    .icon2 img,
+    .icon3 img{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:480px){
+
+    nav li a{
+        font-size: 13px;
+    }
+
+    h1{
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    .top1 p,
+    .top2 p,
+    .top3 p,
+    .top4 p,
+    .top5 p,
+    .top6 p{
+        font-size: 14px;
+    }
+
+    footer p:last-child{
+        text-align: center;
+    }
+}
+
